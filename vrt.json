@@ -1,0 +1,784 @@
+{
+  "content": [
+    {
+      "id": "authorization",
+      "name": "Authorization",
+      "type": "category",
+      "children": [
+        {
+          "id": "path_traversal",
+          "name": "Test for path traversal",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "bypassing_authorization_schema",
+          "name": "Test for bypassing authorization schema",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "vertical_access_control",
+          "name": "Test for vertical Access control problems (a.k.a. Privilege Escalation)",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "horizontal_access_control",
+          "name": "Test for horizontal Access control problems (between two users at the same privilege level)",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "missing_authorization",
+          "name": "Test for missing authorization",
+          "type": "variant",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "data_validation",
+      "name": "Data Validation",
+      "type": "category",
+      "children": [
+        {
+          "id": "reflected_xss",
+          "name": "Test for Reflected Cross Site Scripting",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "stored_xss",
+          "name": "Test for Stored Cross Site Scripting",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "dom_based_xss",
+          "name": "Test for DOM based Cross Site Scripting",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "cross_site_flashing",
+          "name": "Test for Cross Site Flashing",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "html_injection",
+          "name": "Test for HTML Injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "sql_injection",
+          "name": "Test for SQL Injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "ldap_injection",
+          "name": "Test for LDAP Injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "orm_injection",
+          "name": "Test for ORM Injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "xml_injection",
+          "name": "Test for XML Injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "xxe_injection",
+          "name": "Test for XXE Injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "ssi_injection",
+          "name": "Test for SSI Injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "xpath_injection",
+          "name": "Test for XPath Injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "xquery_injection",
+          "name": "Test for XQuery Injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "imap_smtp_injection",
+          "name": "Test for IMAP/SMTP Injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "code_injection",
+          "name": "Test for Code Injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "expression_language_injection",
+          "name": "Test for Expression Language Injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "command_injection",
+          "name": "Test for Command Injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "overflow",
+          "name": "Test for Overflow (Stack, Heap and Integer)",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "format_string",
+          "name": "Test for Format String",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "incubated_vulnerabilities",
+          "name": "Test for incubated vulnerabilities",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "http_splitting_smuggling",
+          "name": "Test for HTTP Splitting/Smuggling",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "http_verb_tampering",
+          "name": "Test for HTTP Verb Tampering",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "open_redirection",
+          "name": "Test for Open Redirection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "local_file_inclusion",
+          "name": "Test for Local File Inclusion",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "remote_file_inclusion",
+          "name": "Test for Remote File Inclusion",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "client_server_validation",
+          "name": "Compare client-side and server-side validation rules",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "nosql_injection",
+          "name": "Test for NoSQL injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "http_parameter_pollution",
+          "name": "Test for HTTP parameter pollution",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "auto_binding",
+          "name": "Test for auto-binding",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "mass_assignment",
+          "name": "Test for Mass Assignment",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "null_invalid_session_cookie",
+          "name": "Test for NULL/Invalid Session Cookie",
+          "type": "variant",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "denial_of_service",
+      "name": "Denial of Service",
+      "type": "category",
+      "children": [
+        {
+          "id": "anti_automation",
+          "name": "Test for anti-automation",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "account_lockout",
+          "name": "Test for account lockout",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "http_protocol_dos",
+          "name": "Test for HTTP protocol DoS",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "sql_wildcard_dos",
+          "name": "Test for SQL wildcard DoS",
+          "type": "variant",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "business_logic",
+      "name": "Business Logic",
+      "type": "category",
+      "children": [
+        {
+          "id": "feature_misuse",
+          "name": "Test for feature misuse",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "lack_non_repudiation",
+          "name": "Test for lack of non-repudiation",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "trust_relationships",
+          "name": "Test for trust relationships",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "integrity_of_data",
+          "name": "Test for integrity of data",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "segregation_of_duties",
+          "name": "Test segregation of duties",
+          "type": "variant",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "cryptography",
+      "name": "Cryptography",
+      "type": "category",
+      "children": [
+        {
+          "id": "unencrypted_data",
+          "name": "Check if data which should be encrypted is not",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "wrong_algorithm_usage",
+          "name": "Check for wrong algorithms usage depending on context",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "weak_algorithm_usage",
+          "name": "Check for weak algorithms usage",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "proper_salting",
+          "name": "Check for proper use of salting",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "randomness_functions",
+          "name": "Check for randomness functions",
+          "type": "variant",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "risky_file_uploads",
+      "name": "Risky Functionality - File Uploads",
+      "type": "category",
+      "children": [
+        {
+          "id": "file_types_whitelisted",
+          "name": "Test that acceptable file types are whitelisted",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "file_size_limits",
+          "name": "Test that file size limits, upload frequency and total file counts are defined and are enforced",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "file_contents_match",
+          "name": "Test that file contents match the defined file type",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "antivirus_scanning",
+          "name": "Test that all file uploads have Anti-Virus scanning in-place.",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "unsafe_filenames",
+          "name": "Test that unsafe filenames are sanitised",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "files_not_directly_accessible",
+          "name": "Test that uploaded files are not directly accessible within the web root",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "files_not_served_same_hostname",
+          "name": "Test that uploaded files are not served on the same hostname/port",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "files_integrated_auth",
+          "name": "Test that files and other media are integrated with the authentication and authorisation schemas",
+          "type": "variant",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "risky_card_payment",
+      "name": "Risky Functionality - Card Payment",
+      "type": "category",
+      "children": [
+        {
+          "id": "card_payment_known_vuln",
+          "name": "Test for known vulnerabilities and configuration issues on Web Server and Web Application",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "default_password",
+          "name": "Test for default or guessable password",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "non_production_data",
+          "name": "Test for non-production data in live environment, and vice-versa",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "injection_vulnerabilities",
+          "name": "Test for Injection vulnerabilities",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "buffer_overflows",
+          "name": "Test for Buffer Overflows",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "insecure_crypto_storage",
+          "name": "Test for Insecure Cryptographic Storage",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "insufficient_tls",
+          "name": "Test for Insufficient Transport Layer Protection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "improper_error_handling",
+          "name": "Test for Improper Error Handling",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "cvss_v2_above_4",
+          "name": "Test for all vulnerabilities with a CVSS v2 score > 4.0",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "auth_and_authorization",
+          "name": "Test for Authentication and Authorization issues",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "csrf",
+          "name": "Test for CSRF",
+          "type": "variant",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "html5",
+      "name": "HTML 5",
+      "type": "category",
+      "children": [
+        {
+          "id": "web_messaging",
+          "name": "Test Web Messaging",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "web_storage_sql_injection",
+          "name": "Test for Web Storage SQL injection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "cors_implementation",
+          "name": "Check CORS implementation",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "offline_web_application",
+          "name": "Check Offline Web Application",
+          "type": "variant",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "general_security",
+      "name": "General Security",
+      "type": "category",
+      "children": [
+        {
+          "id": "common_urls",
+          "name": "Check for commonly used application and administrative URLs",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "old_backup_files",
+          "name": "Check for old, backup and unreferenced files",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "http_methods_xst",
+          "name": "Check HTTP methods supported and Cross Site Tracing (XST)",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "file_extensions_handling",
+          "name": "Test file extensions handling",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "security_http_headers",
+          "name": "Test for security HTTP headers (e.g. CSP, X-Frame-Options, HSTS)",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "policies",
+          "name": "Test for policies (e.g. Flash, Silverlight, robots)",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "non_prod_data",
+          "name": "Test for non-production data in live environment, and vice-versa",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "sensitive_client_data",
+          "name": "Check for sensitive data in client-side code (e.g. API keys, credentials)",
+          "type": "variant",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "secure_transmission",
+      "name": "Secure Transmission",
+      "type": "category",
+      "children": [
+        {
+          "id": "ssl_version",
+          "name": "Check SSL Version, Algorithms, Key length",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "digital_certificate",
+          "name": "Check for Digital Certificate Validity (Duration, Signature and CN)",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "credentials_https",
+          "name": "Check credentials only delivered over HTTPS",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "login_form_https",
+          "name": "Check that the login form is delivered over HTTPS",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "session_tokens_https",
+          "name": "Check session tokens only delivered over HTTPS",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "hsts_usage",
+          "name": "Check if HTTP Strict Transport Security (HSTS) in use",
+          "type": "variant",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "authentication",
+      "name": "Authentication",
+      "type": "category",
+      "children": [
+        {
+          "id": "user_enumeration",
+          "name": "Test for user enumeration",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "auth_bypass",
+          "name": "Test for authentication bypass",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "bruteforce_protection",
+          "name": "Test for bruteforce protection",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "password_quality",
+          "name": "Test password quality rules",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "remember_me",
+          "name": "Test remember me functionality",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "autocomplete_password",
+          "name": "Test for autocomplete on password forms/input",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "password_reset",
+          "name": "Test password reset and/or recovery",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "password_change",
+          "name": "Test password change process",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "captcha",
+          "name": "Test CAPTCHA",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "multi_factor_auth",
+          "name": "Test multi factor authentication",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "logout_function",
+          "name": "Test for logout functionality presence",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "cache_management",
+          "name": "Test for cache management on HTTP (eg Pragma, Expires, Max-age)",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "default_logins",
+          "name": "Test for default logins",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "user_auth_history",
+          "name": "Test for user-accessible authentication history",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "account_notifications",
+          "name": "Test for out-of channel notification of account lockouts and successful password changes",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "consistent_auth",
+          "name": "Test for consistent authentication across applications with shared authentication schema / SSO",
+          "type": "variant",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "session_management",
+      "name": "Session Management",
+      "type": "category",
+      "children": [
+        {
+          "id": "session_method",
+          "name": "Establish how session management is handled in the application (eg, tokens in cookies, token in URL)",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "session_cookie_flags",
+          "name": "Check session tokens for cookie flags (httpOnly and secure)",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "session_cookie_scope",
+          "name": "Check session cookie scope (path and domain)",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "session_cookie_duration",
+          "name": "Check session cookie duration (expires and max-age)",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "session_termination_max",
+          "name": "Check session termination after a maximum lifetime",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "session_termination_relative",
+          "name": "Check session termination after relative timeout",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "session_termination_logout",
+          "name": "Check session termination after logout",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "multiple_sessions",
+          "name": "Test to see if users can have multiple simultaneous sessions",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "session_cookie_randomness",
+          "name": "Test session cookies for randomness",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "new_session_tokens",
+          "name": "Confirm that new session tokens are issued on login, role change and logout",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "consistent_session_management",
+          "name": "Test for consistent session management across applications with shared session management",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "session_puzzling",
+          "name": "Test for session puzzling",
+          "type": "variant",
+          "priority": 1
+        },
+        {
+          "id": "csrf_clickjacking",
+          "name": "Test for CSRF and clickjacking",
+          "type": "variant",
+          "priority": 1
+        }
+      ]
+    }
+   ]
+}

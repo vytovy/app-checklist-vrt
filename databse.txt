@@ -1,0 +1,14 @@
+-- DATABASE SETUP --
+CREATE TABLE targets (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    url VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE checklist (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    target_id INT,
+    description TEXT,
+    status ENUM('belum', 'berhasil', 'gagal') DEFAULT 'belum',
+    FOREIGN KEY (target_id) REFERENCES targets(id) ON DELETE CASCADE
+);
